@@ -10,6 +10,7 @@ I have created simple sinatra setup.
 $ bundle init
 # This will create Gemfile. Open it with editor and fill in rspec and capybara
 $ bundle
+$ rspec --init # this will create the spec dir
 # After all files are created:
 $ rspec
 .
@@ -58,7 +59,7 @@ Capybara.app = Sinatra::Application
 
 feature 'main page' do
    scenario 'user sees hello' do
-    visit'/'
+    visit '/'
     expect(page).to have_content 'Hello'
    end
 end
