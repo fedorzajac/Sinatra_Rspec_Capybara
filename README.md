@@ -48,7 +48,7 @@ end
 ```
 spec/spec_helper.rb
 ```ruby
-require 'sinatra'
+require './main'
 require 'capybara/rspec'
 ```
 spec/features/user_visits_root_spec.rb
